@@ -1,8 +1,8 @@
 'use strict';
 
 function slugify(title) {
-    const slug = title.toLowerCase().split(' ').join('-');
-    return slug;
+    const slug = title.toLowerCase().split(' ');
+    return slug.join('-');
 }
 
 console.log(slugify('Arrays for begginers')); // "arrays-for-begginers"
